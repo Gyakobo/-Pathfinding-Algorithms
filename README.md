@@ -29,11 +29,24 @@ The grid is represented as a matrix where `0` denotes a free cell and `1` an obs
 
 Description: The A* algorithm is a popular and efficient pathfinding algorithm that combines the advantages of Dijkstra's algorithm and a heuristic approach. It uses a priority queue to always expand the node with the lowest estimated total cost.
 
-How It Works:
+#### How It Works:
 
 * A* maintains two scores: g_score, which is the cost to reach a particular node, and f_score, which is the estimated total cost from the start node to the goal through that node.
 * The heuristic function in A* estimates the cost from a node to the goal, typically using the Manhattan distance in grid-based environments.
 * A* balances exploration and exploitation by considering both the current cost (g_score) and the heuristic (f_score), ensuring it finds an optimal path in most scenarios
 
+#### Advantages:
 
+* Guarantees the shortest path if a proper heuristic is used.
+* Efficient and fast in most cases when compared to uninformed search algorithms.
+
+#### Disadvantages:
+
+* Can be slower in very complex grids with a high number of obstacles.
+
+---
+
+2. Breadth-First Search (BFS)
+
+Description: BFS is an uninformed search algorithm that explores the grid level by level. It begins from the start node and systematically visits all neighbors of a node before moving deeper into the grid.
 
