@@ -5,11 +5,17 @@
 
 Author: [Andrew Gyakobo](https://github.com/Gyakobo)
 
-This project is meant to generate a sample [transformer](https://pypi.org/project/transformers/) model locally based on textual input using the Tensorflow and PyTorch libraries.
-
 >[!NOTE]
 >In this project we'll basically try to traverse a labyrinth. 
 
+## Introduction
+
+This project implements and compares several fundamental pathfinding algorithms in a 2D grid environment using Python. The task is to navigate from a designated start point to an endpoint on a grid where certain cells represent obstacles. The implemented algorithms are:
+
+1. A Algorithm (A-Star)*
+1. Breadth-First Search (BFS)
+1. Depth-First Search (DFS)
+1. Dijkstra’s Algorithm
 
 
 
