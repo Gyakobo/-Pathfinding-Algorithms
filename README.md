@@ -25,7 +25,7 @@ The grid is represented as a matrix where `0` denotes a free cell and `1` an obs
 
 ## Methodology
 
-1. A algorithm (A-star)*
+### A algorithm (A-star)*
 
 Description: The A* algorithm is a popular and efficient pathfinding algorithm that combines the advantages of Dijkstra's algorithm and a heuristic approach. It uses a priority queue to always expand the node with the lowest estimated total cost.
 
@@ -46,7 +46,7 @@ Description: The A* algorithm is a popular and efficient pathfinding algorithm t
 
 ---
 
-2. Breadth-First Search (BFS)
+### Breadth-First Search (BFS)
 
 Description: BFS is an uninformed search algorithm that explores the grid level by level. It begins from the start node and systematically visits all neighbors of a node before moving deeper into the grid.
 
