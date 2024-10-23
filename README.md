@@ -17,6 +17,23 @@ This project implements and compares several fundamental pathfinding algorithms 
 1. Depth-First Search (DFS)
 1. Dijkstra’s Algorithm
 
+Each algorithm has different characteristics in terms of efficiency, pathfinding strategy, and suitability for various types of problems. By simulating their performance on the same grid, we gain insights into their behaviors and differences.
+
+### Algorithm Oversview:
+
+The grid is represented as a matrix where `0` denotes a free cell and `1` an obstacle. The goal is to find the shortest path from the starting cell to the target cell while avoiding obstacles. The algorithms differ in how they explore the grid and how they decide the next step.
+
+## Methodology
+
+1. A algorithm (A-star)*
+
+Description: The A* algorithm is a popular and efficient pathfinding algorithm that combines the advantages of Dijkstra's algorithm and a heuristic approach. It uses a priority queue to always expand the node with the lowest estimated total cost.
+
+How It Works:
+
+* A* maintains two scores: g_score, which is the cost to reach a particular node, and f_score, which is the estimated total cost from the start node to the goal through that node.
+* The heuristic function in A* estimates the cost from a node to the goal, typically using the Manhattan distance in grid-based environments.
+* A* balances exploration and exploitation by considering both the current cost (g_score) and the heuristic (f_score), ensuring it finds an optimal path in most scenarios
 
 
 
