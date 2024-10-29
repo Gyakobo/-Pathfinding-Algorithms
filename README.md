@@ -107,6 +107,44 @@ Description: Dijkstra's algorithm is a weighted graph search algorithm that syst
 * In a grid where all edges have equal weights, Dijkstra’s algorithm doesn’t outperform BFS but is more computationally expensive due to priority queue operations.
 * Slower than A* in many cases, as it doesn’t use a heuristic to prioritize exploration.
 
+## Results
+
+The following is an example of the [main.py](https://github.com/Gyakobo/Pathfinding-Algorithms/blob/main/main.py) in action
+
+```bash
+# Running A* Algorithm:
+# Path found:
+0 1 0 0 0
+* 1 0 1 0
+* 0 0 1 0
+* 1 1 0 0
+* * * * 0
+
+# Running BFS Algorithm:
+# Path found:
+0 1 0 0 0
+* 1 0 1 0
+* 0 0 1 0
+* 1 1 0 0
+* * * * 0
+
+# Running DFS Algorithm:
+# Path found:
+0 1 0 0 0
+* 1 0 1 0
+* 0 0 1 0
+* 1 1 0 0
+* * * * 0
+
+# Running Dijkstra Algorithm:
+# Path found:
+0 1 0 0 0
+* 1 0 1 0
+* 0 0 1 0
+* 1 1 0 0
+* * * * 0
+```
+
 ## Conclusion
 
 Each algorithm approaches the pathfinding problem with different strategies, leading to varying levels of efficiency and effectiveness:
