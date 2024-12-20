@@ -155,3 +155,6 @@ Each algorithm approaches the pathfinding problem with different strategies, lea
 * Dijkstra's Algorithm is thorough and guarantees the shortest path, but in the context of unweighted grids, it doesn’t offer significant advantages over BFS and is slower than A*.
 
 By comparing the algorithms, we see that the choice of algorithm depends on the grid structure and the requirements for efficiency, memory usage, and optimality of the solution. In scenarios where a heuristic can be defined (as in grid-based pathfinding), A* is typically the best choice. However, BFS is useful for simpler grids, and DFS is useful in memory-constrained environments.
+
+## License
+MIT
