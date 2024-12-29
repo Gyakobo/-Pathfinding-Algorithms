@@ -111,7 +111,7 @@ Description: Dijkstra's algorithm is a weighted graph search algorithm that syst
 
 The following is an example of the [main.py](https://github.com/Gyakobo/Pathfinding-Algorithms/blob/main/main.py) in action
 
-```shell
+```
 Running A* Algorithm:
 Path found:
 0 1 0 0 0
