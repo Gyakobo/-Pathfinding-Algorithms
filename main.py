@@ -134,7 +134,7 @@ def print_grid(grid, path=None):
     if path:
         for (x, y) in path:
             if (x, y) != start and (x, y) != end:
-                temp_grid[x][y] = '*'
+                temp_grid[x][y] = '`*`'
     for row in temp_grid:
         print(" ".join(str(cell) for cell in row))
 

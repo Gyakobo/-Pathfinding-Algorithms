@@ -112,38 +112,40 @@ Description: Dijkstra's algorithm is a weighted graph search algorithm that syst
 The following is an example of the [main.py](https://github.com/Gyakobo/Pathfinding-Algorithms/blob/main/main.py) in action
 
 ```bash
-# Running A* Algorithm:
-# Path found:
+Running A* Algorithm:
+Path found:
 0 1 0 0 0
-* 1 0 1 0
-* 0 0 1 0
-* 1 1 0 0
-* * * * 0
+`*` 1 0 1 0
+`*` 0 0 1 0
+`*` 1 1 0 0
+`*` `*` `*` `*` 0
 
-# Running BFS Algorithm:
-# Path found:
+Running BFS Algorithm:
+Path found:
 0 1 0 0 0
-* 1 0 1 0
-* 0 0 1 0
-* 1 1 0 0
-* * * * 0
+`*` 1 0 1 0
+`*` 0 0 1 0
+`*` 1 1 0 0
+`*` `*` `*` `*` 0
 
-# Running DFS Algorithm:
-# Path found:
+Running DFS Algorithm:
+Path found:
 0 1 0 0 0
-* 1 0 1 0
-* 0 0 1 0
-* 1 1 0 0
-* * * * 0
+`*` 1 0 1 0
+`*` 0 0 1 0
+`*` 1 1 0 0
+`*` `*` `*` `*` 0
 
-# Running Dijkstra Algorithm:
-# Path found:
+Running Dijkstra Algorithm:
+Path found:
 0 1 0 0 0
-* 1 0 1 0
-* 0 0 1 0
-* 1 1 0 0
-* * * * 0
+`*` 1 0 1 0
+`*` 0 0 1 0
+`*` 1 1 0 0
+`*` `*` `*` `*` 0
 ```
+
+Here's a 40 x 40 grid example generated with the `create_grid_with_path(size)` function. Mind you that this function randomly places [0, 1] in the grid and does not guarantee you a successful pathway.
 
 ```bash
 Running A* Algorithm:
