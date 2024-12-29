@@ -150,7 +150,7 @@ grid = [
 '''
 
 # You can also make a sample sized grid with the `create_grid_with_path()`
-grid = create_grid_with_path(40)
+grid = create_random_grid_with_path(40)
 
 # Start and End Points
 start = (0, 0)
