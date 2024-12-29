@@ -139,7 +139,6 @@ def print_grid(grid, path=None):
         print(" ".join(str(cell) for cell in row))
 
 # Define a 5x5 grid (0 = free, 1 = obstacle)
-'''
 grid = [
     [0, 1, 0, 0, 0],
     [0, 1, 0, 1, 0],
@@ -147,9 +146,9 @@ grid = [
     [0, 1, 1, 0, 0],
     [0, 0, 0, 0, 0]
 ]
-'''
 
-grid = create_grid_with_path(40)
+# You can also make a sample sized grid with the `create_grid_with_path()`
+# grid = create_grid_with_path(40)
 
 # Start and End Points
 start = (0, 0)
