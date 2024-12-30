@@ -2,6 +2,10 @@ import heapq
 from collections import deque
 from grid import *
 
+# Grid Configuration
+width, height = 40, 40
+
+
 # Base Class for pathfinding algorithms
 class Pathfinding:
     def __init__(self, grid, start, end):
@@ -150,11 +154,17 @@ grid = [
 '''
 
 # You can also make a sample sized grid with the `create_grid_with_path()`
-grid = create_random_grid_with_path(40)
+# grid = create_random_grid_with_path(40)
+
+if width % 2 == 0 or width % 2 == 0:
+    width  += 1
+    height += 1
+
+grid = random_DFS_grid(width, height)
 
 # Start and End Points
-start = (0, 0)
-end = (len(grid)-1, len(grid[0])-1)
+start = (1, 1)
+end = (len(grid)-2, len(grid[0])-2)
 
 # Pathfinding options
 algorithms = {

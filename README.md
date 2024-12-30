@@ -109,7 +109,7 @@ Description: Dijkstra's algorithm is a weighted graph search algorithm that syst
 
 ## Results
 
-The following is an example of the [main.py](https://github.com/Gyakobo/Pathfinding-Algorithms/blob/main/main.py) in action
+The following is an example of the [main.py](https://github.com/Gyakobo/Pathfinding-Algorithms/blob/main/main.py) in action on a sample 5x5 grid.
 
 ```bash
 # Running A* Algorithm:
@@ -146,6 +146,10 @@ The following is an example of the [main.py](https://github.com/Gyakobo/Pathfind
 ```
 
 Here's a 40 x 40 grid example generated with the `create_grid_with_path(size)` function. Mind you that this function randomly places numbers[0, 1] in the grid by utilizing the random Depth-First-Search algorithm which guarantees you at least one maze solution. If you happen to be interested in this maze generator, please then refer to this project repo [maze-generator](https://github.com/Gyakobo/Maze-Generator).
+
+Just to demonstrate the results of the aforementioned repo's project, here it goes:
+
+<img src="./miscellaneous/maze-generation-2.gif">
 
 ```bash
 Running A* Algorithm:

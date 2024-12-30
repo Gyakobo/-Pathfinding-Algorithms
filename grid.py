@@ -2,41 +2,43 @@ import random
 import numpy as np
 
 
-def random_DFS_grid(size):
-    # Grid 
-    grid = np.ones((size, size), dtype=int)
+def random_DFS_grid(width, height):
+    # Initialize grid
+    grid = np.ones((height, width), dtype=int)  # 1 for walls, 0 for passages
+    visited = np.zeros_like(grid, dtype=bool)
 
-    directions = (-1, 0, 1)
-    cur = (0, 0)
-    target = (size-1, size-1)
-    stack = [cur]
-    visited = set()
+    # Directions: (dx, dy)
+    directions = [(-2, 0), (2, 0), (0, -2), (0, 2)]
+    
+    # Starting position
+    start_x, start_y = random.randrange(1, width, 2), random.randrange(1, height, 2)
+    stack = [(start_x, start_y)]
+    grid[start_y, start_x] = 0
+    visited[start_y, start_x] = True
 
-    def check_if_cell_is_valid(point):
-        if point[0] < size and point[0] >= 0 
-            and point[1] < size and point[1] >= 0
-            and point not in visited:
-            return True
-        return False
+    # Target position
+    target_x, target_y = width - 1, height - 1
 
-    # Create a guaranteed path along the diagonal
-    # for i in range(size):
-    #     for j in range(size):
-    #         grid[i, j] = 1  # Ensure the path remains unobstructed
+    current_x, current_y = 0, 0
+    while stack:
+        current_x, current_y = stack[-1]
+        unvisited_neighbors = []
 
-    while cur == target:
-        # Randomly select and pop an element
-        random_index    = random.randrange(len(stack))        
-        cur             = stack.pop(random_index)
-        visited.add(cur)
-        grid[cur[0], cur[1]] = 1
+        for dx, dy in directions:
+            nx, ny = current_x + dx, current_y + dy
+            if 1 <= nx < width - 1 and 1 <= ny < height - 1 and not visited[ny, nx]:
+                unvisited_neighbors.append((nx, ny))
 
-        for i in directions:
-            for j in directions:
-                cur = (cur[0]+i, cur[1]+j)
-                if check_if_cell_is_valid(cur):
-                    stack.append(cur)
+        if unvisited_neighbors:
+            nx, ny = random.choice(unvisited_neighbors)
+            grid[(current_y + ny) // 2, (current_x + nx) // 2] = 0  # Remove wall
+            grid[ny, nx] = 0  # Mark passage
+            visited[ny, nx] = True
+            stack.append((nx, ny))
+        else:
+            stack.pop()
 
+    return grid.tolist()
 
 
 
