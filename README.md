@@ -145,11 +145,11 @@ The following is an example of the [main.py](https://github.com/Gyakobo/Pathfind
 * * * * 0
 ```
 
-Here's a 40 x 40 grid example generated with the `create_grid_with_path(size)` function. Mind you that this function randomly places numbers[0, 1] in the grid by utilizing the random Depth-First-Search algorithm which guarantees you at least one maze solution. If you happen to be interested in this maze generator, please then refer to this project repo [maze-generator](https://github.com/Gyakobo/Maze-Generator).
-
-Just to demonstrate the results of the aforementioned repo's project, here it goes:
+Here's a 40 x 40 grid example generated with the `random_DFS_grid(width, height)` function. Mind you that this function randomly places numbers[0, 1] in the grid by utilizing the random Depth-First-Search algorithm which guarantees you at least one maze solution. 
 
 <img src="./miscellaneous/maze-generation-2.gif">
+
+If you happen to be interested in this maze generator, please then refer to this project repo [maze-generator](https://github.com/Gyakobo/Maze-Generator).
 
 ```bash
 Running A* Algorithm:
